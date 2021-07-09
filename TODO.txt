@@ -1,0 +1,10 @@
+Stu stuff:
+  -*MUST* delete archived requests
+  -general refactor of methods in Admin.vue & Calendar.vue
+
+-email:
+  - whitelisted at oreilly server
+  - real from address
+
+-mobile view maybs
+-domain name maybs
