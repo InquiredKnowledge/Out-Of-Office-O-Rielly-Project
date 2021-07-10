@@ -1,29 +1,11 @@
 ![title](https://user-images.githubusercontent.com/53918109/109444760-90565680-7a03-11eb-85d4-07b25571ef0c.png)
 
-## Project setup
+## Project Demonstration
+https://www.otccompsci.com/21-sp-cis-260-final-projects/
 
-```
-npm install
-```
+## Project Abstract
+“O-O-O-O’Reilly!” stands for Out-Of-Office O’Reilly and is our Paid Time Off (PTO) management tool for the O’Reilly Auto Parts Retail Point of Sale development team. This tool was requested to fulfill multiple needs of the O’Reilly team. First, to provide O’Reilly team members a quick and easy way to request PTO. Second, to provide a single path for the O’Reilly management team to respond to PTO requests. Finally, this website will provide a single calendar for the O’Reilly team to view all approved PTO.
 
-### Compiles and hot-reloads for development
+To fulfill these needs, the O’Reilly PTO website allows users to create a personal account using their O’Reilly Auto Parts email address and team member information. Once an account is created, team members can view the calendar of approved requests and submit new PTO requests. Once a team member submits a new PTO request, an email will be automatically generated and sent to their supervisor, notifying them of the details for that request. For any team member on the O’Reilly management team, their user profile will grant them access to the standard team member functions, as well as an admin view that consists of three tables: Pending Requests, Request History, and TM(Team Member) Information. They can use these tables to respond to new PTO requests, view PTO request history, and view and edit team member information, respectively. After a member of the management team responds to a pending request, an email will be generated and sent to the requesting team member notifying them of the response. For all approved PTO requests, an entry for that request will be added to the calendar. The calendar can be viewed by month, week, or day, and entries on the calendar can be filtered by PTO type, supervisor, and Team member.
 
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
+The O’Reilly PTO website uses Google’s Firebase for all its data management. When a user creates a new account, a document is generated for that user. As new requests are generated, they are attached to that user document in a collection. Standard Firebase authentication is used to handle account access levels based on a user’s account type. Cloud functions are used to query and update data, as well as control what information we display for non admin users. The UI/UX was built using Vuetify. Vuetify is a framework similar to Bootstrap. It helped us to create a clean and professional looking user interface. Vuetify has many standard components that we were able to take and modify to fit the look, feel, and functionality we were trying to achieve, including a calendar, date pickers, tables, and side bars. The team tested regularly during development and did end to end testing post development to ensure all bugs were caught and resolved before providing the finished product to the client. As bugs were found, we used Trello to log bugs as cards and track progress on bug remediation.
